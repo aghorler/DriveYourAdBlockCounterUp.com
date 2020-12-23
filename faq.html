@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>DriveYourAdBlockCounterUp.com</title>
+
+    <link href="style.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div>
+      <h2>DriveYourAdBlockCounterUp.com - FAQ</h2>
+      <p class="bold">What is this?</p>
+      <p><span class="italic">DriveYourAdBlockCounterUp.com</span> is a joke tool that can be used to artificially increase the number of blocked ads in your ad blocker's blocked ad counter.</p>
+
+      <p class="bold">What does this do?</p>
+      <p><span class="italic">DriveYourAdBlockCounterUp.com</span> uses JavaScript run locally in your browser to perform a GET request to <span class="italic">ads.driveyouradblockcounterup.com</span> once every 50 milliseconds. <span class="italic">ads.driveyouradblockcounterup.com</span> is not a real ad server (it just runs a Cloudflare Worker that responds with a bit of static JSON) but most ad blockers will assume that it's used to serve ads and will block it - repeatedly.</p>
+
+      <p class="bold">Will this work with every ad blocker?</p>
+      <p>Not necesscerily. Most browser-extension-based ad blockers will block the <span class="italic">ads.*</span> domain pattern, but this is not necesscerily true in all cases. <span class="italic">DriveYourAdBlockCounterUp.com</span> may not work for purely DNS-level ad blocking solutions (like Pi-hole or solutions that use your hosts file).</p>
+
+      <p class="bold">It's saying that it can't detect an ad blocker, but I have an ad blocker. Why is this?</p>
+      <p>Your ad blocker probably doesn't block the <span class="italic">ads.*</span> domain pattern. I personally recommend you try <a href="https://github.com/gorhill/uBlock" rel="noopener noreferrer"> uBlock Origin</a> instead if you're having this issue.</p>
+
+      <p class="bold">What happens if I run this without an ad blocker?</p>
+      <p><span class="italic">DriveYourAdBlockCounterUp.com</span> performs a GET request to <span class="italic">ads.driveyouradblockcounterup.com</span> once every 50 milliseconds. The expectation is that these requests will not be successful (because they will be blocked by an ad blocker). If any request is sucessful, <span class="italic">DriveYourAdBlockCounterUp.com</span> will display an error stating that it couldn't detect an ad blocker and it will stop. This is to protect your and our network environments from excessive traffic.</p>
+
+      <p class="bold">Is this dangerous or malicious?</p>
+      <p>No - at least not as I write this. If you're worried, the source code to this website is available <a href="https://github.com/aghorler/DriveYourAdBlockCounterUp.com" rel="noopener noreferrer">on GitHub</a>.</p>
+
+      <p class="bold">Does this website try to serve actual ads?</p>
+      <p>No. <span class="italic">DriveYourAdBlockCounterUp.com</span> performs a repeated request to a fake ad server on a subdomain of this domain. No genuine ads are attempted or loaded.</p>
+
+      <p class="bold">Is this a legimate tool?</p>
+      <p>No. This is a joke and it has no legitimate use.</p>
+
+      <p>&nbsp;</p>
+
+      <p><a href="index.html">Return home</a></p>
+    </div>
+  </body>
+
+  <footer>
+    <p>Idea by reddit community. Built by <a href="https://aaronhorler.com" rel="noopener noreferrer">Aaron Horler</a> as a joke. See the source code <a href="https://github.com/aghorler/DriveYourAdBlockCounterUp.com" rel="noopener noreferrer">on GitHub</a>.</p>
+  </footer>
+</html>

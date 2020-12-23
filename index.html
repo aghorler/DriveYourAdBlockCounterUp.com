@@ -4,33 +4,33 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Content Security Policy -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; base-uri 'none'; connect-src 'self' https://ads.example.com; font-src 'none'; form-action 'none'; frame-src 'none'; img-src 'self'; manifest-src 'self'; media-src 'none'; object-src 'none'; script-src 'self'; style-src 'self'; upgrade-insecure-requests; worker-src 'none'">
-
-    <!-- Privacy -->
-    <meta name="referrer" content="no-referrer">
-    <meta http-equiv="x-dns-prefetch-control" content="off">
-
     <title>DriveYourAdBlockCounterUp.com</title>
 
+    <meta name="description" content="Artificially increase the number of blocked ads in your ad blocker's blocked ad counter!">
+
+    <meta name="twitter:dnt" content="on">
+
     <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   </head>
   <body>
     <div id="content">
       <p id="heading">Number of requests to ad servers made:</p>
       <p id="counter">0</p>
+      <p>
+        <input type="checkbox" id="consent">
+        <label for="consent"> I have an ad blocker installed and I understand <a href="faq.html">what this website does</a>.</label>
+      </p>
+      <p>
+        <button type="button" id="go">Go!</button>
+      </p>
     </div>
 
-    <div id="github">
-      <a href="https://github.com/aghorler/DriveYourAdBlockCounterUp.com">
-        <p id="github-inner"><img id="github-image" src="github.png"></p>
-      </a>
-    </div>
-
-    <div id="footer">
-      <p>Idea by reddit. Developed by <a href="https://aaronhorler.com/">Aaron Horler</a>.</p>
-    </div>
-
-    <script src="request.js"></script>
+    <script src="request.js" async defer></script>
   </body>
+
+  <footer>
+    <p>Idea by reddit community. Built by <a href="https://aaronhorler.com" rel="noopener noreferrer">Aaron Horler</a> as a joke. See the source code <a href="https://github.com/aghorler/DriveYourAdBlockCounterUp.com" rel="noopener noreferrer">on GitHub</a>.</p>
+  </footer>
 </html>

@@ -1,48 +1,49 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  height:100vh;
+  display:flex; 
+  flex-direction:column;
+}
+
+footer {
+  min-height:50px;
+  margin-top:auto; 
+  text-align: center;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+h2 {
+  word-break: break-all;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
 #content {
   text-align: center;
-  margin-top: 5%;
+  margin-top: 10%;
 }
-#github {
-  text-align: center;
-  background-color: #24292e;
-  width: 250px;
-  margin: 0 auto;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-top: 150px;
-  border-radius: 5%;
-}
-#github-inner {
-  padding-top: 15px;
-  margin-top: -3px;
-  padding-bottom: 15px;
-  margin-bottom: -5px;
-}
-#github-image {
-  width: 90px;
-}
+
 #heading {
   font-size: 19px;
 }
+
 #counter {
-  font-size: 50px;
+  font-size: 10rem;
   font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 55px;
 }
-#footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 60px;
-  width: 100%;
-  overflow: hidden;
-  text-align: center;
-  font-size: 85%;
-}
-@media screen and (max-width: 250px) {
-  #github {
-    width: 95%;
-  }
-  #github-image {
-    width: 40%;
-  }
+
+#go {
+  font-size: 18px;
 }
